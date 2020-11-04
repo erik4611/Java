@@ -4,9 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-
-
         String[][] arr1 = new String[6][5];
 
         String[][] arr2 = new String[4][4]; //{{"1","2","3","4"},{"One","2","3","4"},{"1","2","3","4"},{"1","2","3","4"}};
@@ -28,7 +25,7 @@ public class Main {
         arr2[3][3] = "4";
 
 
-
+    //Задание 3: Вызвать методы в Main:
 
 
         // Задание 1:
@@ -41,6 +38,11 @@ public class Main {
 
 
     }
+
+    // Задание 2: Далее метод должен пройтись по всем элементам массива, преобразовать в int, и просуммировать.
+    //сли в каком-то элементе массива преобразование не удалось
+    //(например, в ячейке лежит символ или текст вместо числа), должно быть брошено
+    //исключение MyArrayDataException, с детализацией в какой именно ячейке лежат неверные данные.
 
     public static void tryStrToInt(String[][] arr) {
 
@@ -61,15 +63,15 @@ public class Main {
         }
     }
 
-    public static void strToInt(String[][] arr)  {                 // Метод преобразовывает массив строк в массив чисел
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                int a = Integer.parseInt(arr[i][j]);
-                System.out.print(a + " ");
-            }
-            System.out.println();
-        }
-    }
+//    public static void strToInt(String[][] arr)  {                 // Метод преобразовывает массив строк в массив чисел
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[i].length; j++) {
+//                int a = Integer.parseInt(arr[i][j]);
+//                System.out.print(a + " ");
+//            }
+//            System.out.println();
+//        }
+//    }
 
 //        public static void newArray(int a, int b) {                 // Метод просто создает строковый массив
 //            String[][] arrStr = new String[a][b];
